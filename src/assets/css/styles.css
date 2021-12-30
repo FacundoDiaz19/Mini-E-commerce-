@@ -1,18 +1,22 @@
 .card-img{
     height: 300px;
-    width: 300px;
+    width: 100px;
 }
 
 .bg-home{
     background: #011419;
     padding: 30px;
+    
 }
 
 .cardd {
     height: 650px;
+    width: 400px;
 }
 
 .text-card{
-    height: 120px;
-    font-size: small;
+    height: 170px;
+    margin: 4px auto;
+    text-overflow: auto;
+    
 }
