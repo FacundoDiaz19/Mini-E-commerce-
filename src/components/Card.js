@@ -1,4 +1,5 @@
 import React from 'react';
+import { saveLastInterestProduct } from '../app/services/StoreServices';
 import '../assets/css/styles.css'
 
 
@@ -14,7 +15,7 @@ function Card({ item }) {
                         <p className="text-card">{description}</p>
                     </div>
                     <div className='row gy-2 text-center '>
-                        <button type="button" name="price" id="" class="btn btn-info btn-lg ">Price <small className="text-white bg-secondary rounded p-2">{price}</small></button>
+                        <button type="button" name="price" id="" class="btn btn-info btn-lg " onClick={() => saveLastInterestProduct(title)}>Price <small className="text-white bg-secondary rounded p-2">{price}</small></button>
                         <button type="button" name="BTN-carrito" id="" class="btn btn-outline-secondary d-inline-block">Agregar al carrito</button>
                     </div>
                    
