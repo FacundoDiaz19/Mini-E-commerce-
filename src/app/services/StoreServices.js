@@ -1,4 +1,4 @@
 export const saveLastInterestProduct = (productName) => {
-    localStorage.setItem("LastProduct", productName);
+    sessionStorage.setItem("LastProduct", productName);
 
 }

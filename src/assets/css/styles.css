@@ -18,5 +18,5 @@
     height: 170px;
     margin: 4px auto;
     text-overflow: auto;
-    
+    object-fit: contain;
 }

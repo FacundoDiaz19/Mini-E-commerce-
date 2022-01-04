@@ -12,11 +12,11 @@ function Card({ item }) {
                 <div className="card-body ">
                     <h5 className="card-title">{title}</h5>
                     <div className='card-text small text-lowercase container-fluid'>
-                        <p className="text-card">{description}</p>
+                        <p className="">{description}</p>
                     </div>
-                    <div className='row gy-2 text-center '>
-                        <button type="button" name="price" id="" class="btn btn-info btn-lg " onClick={() => saveLastInterestProduct(title)}>Price <small className="text-white bg-secondary rounded p-2">{price}</small></button>
-                        <button type="button" name="BTN-carrito" id="" class="btn btn-outline-secondary d-inline-block">Agregar al carrito</button>
+                    <div className='row-md-4 gx-2 text-center '>
+                        <button type="button" name="price" id="" class="btn btn-info btn-lg mx-2 " onClick={() => saveLastInterestProduct(title)}>Price <small className="text-white bg-secondary rounded p-2">{price}</small></button>
+                        <button type="button" name="BTN-carrito" id="" class="btn btn-outline-secondary d-inline-block mx-2">Agregar al carrito</button>
                     </div>
                    
                 </div>
