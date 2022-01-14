@@ -1,5 +1,6 @@
 import { useLiveQuery } from 'dexie-react-hooks';
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import db from '../../app/services/db/db';
 import ShoppingCartItem from './ShoppingCartItem';
 
@@ -35,7 +36,7 @@ function ShoppingCards() {
             <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuDark">
                 {productCart?.map((product) => { return <ShoppingCartItem   key={product.id} item={product}/>})}
                 <li><hr class="dropdown-divider"/></li>
-                <li className='dropdown-item'>Total: ${TotalPrice} </li>         
+                <li className='dropdown-item'><Link to={'/purchase'}>Total: ${TotalPrice}</Link></li>         
             </ul>
             </div>
         </div>

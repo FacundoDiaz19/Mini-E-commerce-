@@ -1,16 +1,26 @@
 import React from 'react';
+import {
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
 import './App.css';
-import Alertproduct from './components/AlertProduct';
-import Home from './components/Home';
-import Navbar from './components/Navbar';
+import Home from './Views/Home';
+import ProductView from './Views/ProductView';
+import PurchaseView from './Views/PurchaseView';
+
 
 
 function App() {
   return (
     <div className="app bg-home">
-      <Navbar />
-      <Alertproduct />
-      <Home />
+      <Switch>
+        <Route path={'/'} exact component={Home}/>
+        <Route path={'/product/:id'} exact component={ProductView}/>
+        <Route path={'/purchase'} exact component={PurchaseView}/>
+        <Route render={() => <Redirect to={'/'} />}/>
+
+      </Switch>
     </div>
   );
 }
