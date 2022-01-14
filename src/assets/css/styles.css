@@ -15,8 +15,18 @@
 }
 
 .text-card{
-    height: 170px;
-    margin: 4px auto;
-    text-overflow: auto;
-    object-fit: contain;
+    height: 150px;
+    margin-top: 10px;
+    float: right;
+    display: flex;
+    align-items: inherit;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: clip;
+    
+}
+
+.boton-price{
+    height: 30px;
+    background-color: slateblue;
 }

@@ -12,7 +12,7 @@ function Home() {
     return (
         <>
         <div className=' container px-4 d-flex justify-content-center mt-4'>
-            <div className="row row-cols-1 row-cols-sm-2 g-5">
+            <div className="row row-cols-1 row-cols-sm-2 g-3">
                 {product.map((product , index) => (
                     <Card  key={index} item={product}/>
                 ))}

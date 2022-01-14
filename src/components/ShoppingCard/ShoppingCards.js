@@ -9,7 +9,8 @@ function ShoppingCards() {
 
 
     const getTotalPrice = () => {
-         const total = productCart?.reduce((totalPrice, CurrentProduct) => { return totalPrice + CurrentProduct.price})
+         const total = productCart?.reduce((totalPrice, CurrentProduct) => { 
+             return totalPrice + CurrentProduct.price},0)
          setTotalPrice(total)
     }
 
