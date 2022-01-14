@@ -5,7 +5,6 @@ import Navbar from '../components/Navbar';
 function ProductView({ match }) {
 
     const [ProductDetail, setProductDetail]= useState(null);
-    const {id, category, title, price} = ProductDetail;
 
     useEffect(() => {
         const { params } = match;
